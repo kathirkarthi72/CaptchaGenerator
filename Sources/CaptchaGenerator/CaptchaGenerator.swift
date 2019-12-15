@@ -13,6 +13,8 @@ import UIKit
 /// Captcha generator
 public struct CaptchaGenerator {
     
+    public init() {}
+    
     ///Alpha numeric
     static private let alphaNumeric = "abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789"
     
