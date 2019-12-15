@@ -1,0 +1,3 @@
+# CaptchaGenerator
+
+Standard captcha generator
