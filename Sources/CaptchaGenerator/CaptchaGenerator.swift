@@ -11,7 +11,8 @@ import Foundation
 import UIKit
 
 /// Captcha generator
-public class CaptchaGenerator {
+public struct CaptchaGenerator {
+    
     ///Alpha numeric
     static private let alphaNumeric = "abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789"
     
@@ -30,7 +31,7 @@ public class CaptchaGenerator {
     }
 
     /// Generate Captcha
-    public func generate() -> NSAttributedString {
+    mutating public func generate() -> NSAttributedString {
         let captcha = CaptchaGenerator.randomString(length: 5)
         
         self.currentCaptchaText = captcha
