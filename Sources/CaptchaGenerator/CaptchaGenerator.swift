@@ -28,10 +28,7 @@ public struct CaptchaGenerator {
     private var attributedKeys: [NSAttributedString.Key: Any] {
         [NSAttributedString.Key.font: UIFont.random(), NSAttributedString.Key.foregroundColor: UIColor.random()]
     }
-}
 
-extension CaptchaGenerator {
-    
     /// Generate Captcha
     mutating public func generate() -> NSAttributedString {
         let captcha = CaptchaGenerator.randomString(length: 5)
